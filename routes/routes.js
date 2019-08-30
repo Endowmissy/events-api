@@ -1,4 +1,4 @@
-module.exports = (app) => {
+const appRouter = (app) => {
 
     const events = require('../data/events.js');
 
@@ -9,3 +9,5 @@ module.exports = (app) => {
     app.get('/events', events.findAll);
 
 }
+
+module.exports = appRouter;
